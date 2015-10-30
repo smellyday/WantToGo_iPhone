@@ -28,8 +28,8 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
 
           mTableView.delegate = self
           mTableView.dataSource = self
-
-          print("TableView - x: \(mTableView.frame.origin.x) y: \(mTableView.frame.origin.y) w: \(mTableView.frame.size.width) h: \(mTableView.frame.size.height)")
+          self.automaticallyAdjustsScrollViewInsets = false
+          
      }
     
     
@@ -99,6 +99,9 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
      
      }
 */
+     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+          return 18
+     }
     
     
 }
