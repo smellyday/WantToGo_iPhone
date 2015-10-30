@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6965D7141BE205370095807C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7131BE205370095807C /* AppDelegate.swift */; };
-		6965D7161BE205370095807C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7151BE205370095807C /* ViewController.swift */; };
 		6965D7191BE205370095807C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6965D7171BE205370095807C /* Main.storyboard */; };
 		6965D71B1BE205370095807C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6965D71A1BE205370095807C /* Assets.xcassets */; };
 		6965D71E1BE205370095807C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6965D71C1BE205370095807C /* LaunchScreen.storyboard */; };
 		6965D7291BE205370095807C /* WantToGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7281BE205370095807C /* WantToGoTests.swift */; };
 		6965D7341BE205370095807C /* WantToGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7331BE205370095807C /* WantToGoUITests.swift */; };
+		698748AB1BE35A38004FA109 /* TGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698748AA1BE35A38004FA109 /* TGHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		6965D7101BE205370095807C /* WantToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6965D7131BE205370095807C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6965D7151BE205370095807C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6965D7181BE205370095807C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6965D71A1BE205370095807C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6965D71D1BE205370095807C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		6965D7331BE205370095807C /* WantToGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantToGoUITests.swift; sourceTree = "<group>"; };
 		6965D7351BE205370095807C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WantToGo-Bridging-Header.h"; sourceTree = "<group>"; };
+		698748AA1BE35A38004FA109 /* TGHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = TGHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				6965D7131BE205370095807C /* AppDelegate.swift */,
-				6965D7151BE205370095807C /* ViewController.swift */,
-				6965D7171BE205370095807C /* Main.storyboard */,
+				698748AA1BE35A38004FA109 /* TGHomeViewController.swift */,
 				6965D71A1BE205370095807C /* Assets.xcassets */,
+				6965D7171BE205370095807C /* Main.storyboard */,
 				6965D71C1BE205370095807C /* LaunchScreen.storyboard */,
 				6965D71F1BE205370095807C /* Info.plist */,
 				698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */,
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6965D7161BE205370095807C /* ViewController.swift in Sources */,
 				6965D7141BE205370095807C /* AppDelegate.swift in Sources */,
+				698748AB1BE35A38004FA109 /* TGHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +413,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WantToGo/WantToGo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WTG.WantToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WantToGo/WantToGo-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
