@@ -15,12 +15,11 @@ class TGSettingViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.mTableView = UITableView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height), style: UITableViewStyle.Grouped)
-//        self.view.addSubview(mTableView!)
-        
         mTableView!.dataSource = self
         mTableView!.delegate = self
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     

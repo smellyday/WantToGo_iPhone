@@ -10,12 +10,13 @@
         <scene sceneID="mKR-bV-sfA">
             <objects>
                 <navigationController id="BK0-HM-vHN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX4-Xn-Eub">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage=" " id="TX4-Xn-Eub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Nkd-ZV-CHV">
@@ -50,7 +51,7 @@
                                 <color key="textColor" red="0.90348335800000001" green="0.1189645153" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-6f-W86">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-6f-W86">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="望途狗" id="wb8-TB-tzA">
                         <barButtonItem key="leftBarButtonItem" title="设置" id="NcF-7i-v6r">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="onClickSettingButton:" destination="oQ2-OE-DbR" id="dep-QF-Xeo"/>
                                 <segue destination="EbB-fo-EKp" kind="show" id="sWL-Gs-XwZ"/>
@@ -102,10 +103,10 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem title="+" id="tja-Ve-C0Z">
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </barButtonItem>
                             <barButtonItem systemItem="refresh" id="Spf-EU-dWj">
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="onClickSyncButton:" destination="oQ2-OE-DbR" id="aIW-Wg-QRp"/>
                                 </connections>
@@ -181,4 +182,7 @@
             <point key="canvasLocation" x="1312.5" y="807"/>
         </scene>
     </scenes>
+    <resources>
+        <image name=" " width="22" height="22"/>
+    </resources>
 </document>

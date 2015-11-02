@@ -47,7 +47,8 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
                cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: TripCellIdentifier)
           }
 
-          cell!.textLabel?.text = "Hello"
+          cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+          cell!.textLabel?.text = "行程 " + String(indexPath.row+1)
         
           return cell!
      }
