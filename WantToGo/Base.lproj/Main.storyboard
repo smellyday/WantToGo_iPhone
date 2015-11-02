@@ -11,7 +11,7 @@
         <scene sceneID="mKR-bV-sfA">
             <objects>
                 <navigationController storyboardIdentifier="Home_NavigationController" id="BK0-HM-vHN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage=" " backIndicatorTransitionMaskImage="001" id="TX4-Xn-Eub">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage=" " id="TX4-Xn-Eub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -425,7 +425,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="设置" id="xmO-e5-jRo"/>
+                    <navigationItem key="navigationItem" title="设置" id="xmO-e5-jRo">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="gYr-q5-Div">
+                            <connections>
+                                <action selector="onClickBackButton" destination="EbB-fo-EKp" id="SMK-t0-ehF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="mTableView" destination="eeH-vV-39q" id="gdn-FE-aRf"/>

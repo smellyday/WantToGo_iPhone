@@ -12,14 +12,18 @@ class TGSettingViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBOutlet var mTableView: UITableView!
     
+    @IBAction func onClickBackButton() {
+        Home_NavigationController.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mTableView!.dataSource = self
         mTableView!.delegate = self
         self.automaticallyAdjustsScrollViewInsets = false
-        
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        
     }
     
     
