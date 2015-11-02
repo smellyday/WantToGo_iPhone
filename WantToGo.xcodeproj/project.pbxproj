@@ -15,6 +15,9 @@
 		6965D7341BE205370095807C /* WantToGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7331BE205370095807C /* WantToGoUITests.swift */; };
 		698748AB1BE35A38004FA109 /* TGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698748AA1BE35A38004FA109 /* TGHomeViewController.swift */; };
 		69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */; };
+		69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A301BE7407A007E176E /* TGTripViewController.swift */; };
+		69D51A351BE74274007E176E /* TGTrip_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */; };
+		69D51A371BE74294007E176E /* TGTrip_InfoViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WantToGo-Bridging-Header.h"; sourceTree = "<group>"; };
 		698748AA1BE35A38004FA109 /* TGHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = TGHomeViewController.swift; sourceTree = "<group>"; };
 		69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGSettingViewController.swift; sourceTree = "<group>"; };
+		69D51A301BE7407A007E176E /* TGTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripViewController.swift; sourceTree = "<group>"; };
+		69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTrip_CollectionViewController.swift; sourceTree = "<group>"; };
+		69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TGTrip_InfoViewControlelr.swift; path = ../TGTrip_InfoViewControlelr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,9 @@
 			children = (
 				698748AA1BE35A38004FA109 /* TGHomeViewController.swift */,
 				69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */,
+				69D51A301BE7407A007E176E /* TGTripViewController.swift */,
+				69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */,
+				69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -296,7 +305,10 @@
 			files = (
 				6965D7141BE205370095807C /* AppDelegate.swift in Sources */,
 				698748AB1BE35A38004FA109 /* TGHomeViewController.swift in Sources */,
+				69D51A371BE74294007E176E /* TGTrip_InfoViewControlelr.swift in Sources */,
+				69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */,
 				69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */,
+				69D51A351BE74274007E176E /* TGTrip_CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

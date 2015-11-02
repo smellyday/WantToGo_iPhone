@@ -135,6 +135,9 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
 
      func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
           tableView.deselectRowAtIndexPath(indexPath, animated: true)
+          
+          let tripVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripViewController") as! TGTripViewController
+          self.navigationController!.pushViewController(tripVC, animated: true)
      }
 
      /*
