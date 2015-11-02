@@ -40,6 +40,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cIN-Ac-FWK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xIi-ij-TMP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come On Baby !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6W-yp-2eW">
@@ -49,14 +50,13 @@
                                 <color key="textColor" red="0.90348335800000001" green="0.1189645153" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-6f-W86">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-6f-W86">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OWo-6f-W86" firstAttribute="leading" secondItem="xIi-ij-TMP" secondAttribute="leading" id="3sC-mk-VCU"/>
                             <constraint firstItem="cIN-Ac-FWK" firstAttribute="top" secondItem="OWo-6f-W86" secondAttribute="bottom" id="Fl7-wW-cun"/>
@@ -69,10 +69,10 @@
                                 <exclude reference="OWo-6f-W86"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Fl7-wW-cun"/>
                                 <exclude reference="3sC-mk-VCU"/>
                                 <exclude reference="Ksd-aI-VJi"/>
                                 <exclude reference="SU9-ov-Zq2"/>
-                                <exclude reference="Fl7-wW-cun"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -85,10 +85,10 @@
                                 <include reference="OWo-6f-W86"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Fl7-wW-cun"/>
                                 <include reference="3sC-mk-VCU"/>
                                 <include reference="Ksd-aI-VJi"/>
                                 <include reference="SU9-ov-Zq2"/>
-                                <include reference="Fl7-wW-cun"/>
                             </mask>
                         </variation>
                     </view>
@@ -97,6 +97,7 @@
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onClickSettingButton:" destination="oQ2-OE-DbR" id="dep-QF-Xeo"/>
+                                <segue destination="EbB-fo-EKp" kind="show" id="sWL-Gs-XwZ"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
@@ -121,6 +122,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VA6-Z9-OkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="403.5" y="807"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="0YS-9O-Hh7">
+            <objects>
+                <viewController id="EbB-fo-EKp" customClass="TGSettingViewController" customModule="WantToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yUR-5o-4oi"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Bd-Yc-GHQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cRG-IE-c7k">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="eeH-vV-39q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="eeH-vV-39q" firstAttribute="top" secondItem="yUR-5o-4oi" secondAttribute="bottom" id="5u9-LB-CvB"/>
+                            <constraint firstItem="eeH-vV-39q" firstAttribute="leading" secondItem="cRG-IE-c7k" secondAttribute="leading" id="I9V-WB-r9o"/>
+                            <constraint firstAttribute="trailing" secondItem="eeH-vV-39q" secondAttribute="trailing" id="jrN-Ff-joo"/>
+                            <constraint firstItem="8Bd-Yc-GHQ" firstAttribute="top" secondItem="eeH-vV-39q" secondAttribute="bottom" id="oJz-aP-po0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eeH-vV-39q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5u9-LB-CvB"/>
+                                <exclude reference="I9V-WB-r9o"/>
+                                <exclude reference="jrN-Ff-joo"/>
+                                <exclude reference="oJz-aP-po0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eeH-vV-39q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5u9-LB-CvB"/>
+                                <include reference="I9V-WB-r9o"/>
+                                <include reference="jrN-Ff-joo"/>
+                                <include reference="oJz-aP-po0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="xmO-e5-jRo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mTableView" destination="eeH-vV-39q" id="gdn-FE-aRf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDX-bs-2W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312.5" y="807"/>
         </scene>
     </scenes>
 </document>

@@ -19,15 +19,12 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
           print("click Sync Button : \(btn)")
      }
 
-     @IBAction func onClickSettingButton(btn: UIBarButtonItem) {
-          print("click Sync Set Button : \(btn)")
-     }
-
      override func viewDidLoad() {
           super.viewDidLoad()
 
           mTableView.delegate = self
           mTableView.dataSource = self
+          mTableView.tableFooterView = UIView(frame: CGRectZero)
           self.automaticallyAdjustsScrollViewInsets = false
           
      }
@@ -54,12 +51,12 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
         
           return cell!
      }
-     
+ /*    
      func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
           return "Header Title"
      }
     
-/*
+
      func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
           return nil
      }
@@ -88,20 +85,20 @@ class TGHomeViewController : UIViewController, UITableViewDataSource, UITableVie
      
      }
 */
-    
+     
+     
+     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+          tableView.deselectRowAtIndexPath(indexPath, animated: true)
+     }
 /*
     //pragma mark - UITableViewDelegate
      func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
           return nil
      }
 
-     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-     
+     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+          return 4
      }
 */
-     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-          return 18
-     }
-    
     
 }
