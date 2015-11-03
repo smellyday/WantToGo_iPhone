@@ -136,8 +136,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="XGV-ok-Fj6" kind="relationship" relationship="viewControllers" id="5Ox-kb-qAl"/>
                         <segue destination="KBd-m2-XVJ" kind="relationship" relationship="viewControllers" id="jhQ-Lz-ODD"/>
+                        <segue destination="qtE-FT-jmN" kind="relationship" relationship="viewControllers" id="V62-V5-Zm2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RF5-DZ-UCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -331,54 +331,15 @@
             </objects>
             <point key="canvasLocation" x="2832" y="729.75"/>
         </scene>
-        <!--收集-->
-        <scene sceneID="PHj-BD-m27">
+        <!--TripCollection-->
+        <scene sceneID="eSB-cN-bfR">
             <objects>
-                <navigationController storyboardIdentifier="Trip_Collection_NavigationController" id="XGV-ok-Fj6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="收集" id="HLL-rp-CDO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sHN-PC-bew">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="i17-NH-P9j" kind="relationship" relationship="rootViewController" id="OkR-3H-SZK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfw-KQ-eSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TripCollection" id="qtE-FT-jmN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kHY-pY-wce"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygz-Jy-p3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2829" y="1417.5"/>
-        </scene>
-        <!--收集-->
-        <scene sceneID="1GX-MF-6JT">
-            <objects>
-                <viewController id="i17-NH-P9j" customClass="TGTrip_CollectionViewController" customModule="WantToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nPU-jm-uWv"/>
-                        <viewControllerLayoutGuide type="bottom" id="Y4x-8U-R5R"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Hfr-yu-Fo2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="收集" id="fDB-Fb-hTm">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="iAk-ZN-ZYy">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="onClickHomeButton" destination="i17-NH-P9j" id="Sgh-vN-8Hg"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hMu-tk-aNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3756" y="1417.5"/>
+            <point key="canvasLocation" x="2870.25" y="1401"/>
         </scene>
         <!--设置-->
         <scene sceneID="0YS-9O-Hh7">
