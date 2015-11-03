@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E8609BE1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */; };
 		6965D7141BE205370095807C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965D7131BE205370095807C /* AppDelegate.swift */; };
 		6965D7191BE205370095807C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6965D7171BE205370095807C /* Main.storyboard */; };
 		6965D71B1BE205370095807C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6965D71A1BE205370095807C /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */; };
 		69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A301BE7407A007E176E /* TGTripViewController.swift */; };
 		69D51A351BE74274007E176E /* TGTrip_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */; };
-		69D51A371BE74294007E176E /* TGTrip_InfoViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTrip_InfoViewControlelr.swift; sourceTree = "<group>"; };
 		6965D7101BE205370095807C /* WantToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6965D7131BE205370095807C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6965D7181BE205370095807C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGSettingViewController.swift; sourceTree = "<group>"; };
 		69D51A301BE7407A007E176E /* TGTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripViewController.swift; sourceTree = "<group>"; };
 		69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTrip_CollectionViewController.swift; sourceTree = "<group>"; };
-		69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TGTrip_InfoViewControlelr.swift; path = ../TGTrip_InfoViewControlelr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +155,10 @@
 		69D51A2A1BE70554007E176E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */,
 				698748AA1BE35A38004FA109 /* TGHomeViewController.swift */,
 				69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */,
 				69D51A301BE7407A007E176E /* TGTripViewController.swift */,
-				69D51A361BE74294007E176E /* TGTrip_InfoViewControlelr.swift */,
 				69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */,
 			);
 			name = ViewController;
@@ -305,10 +305,10 @@
 			files = (
 				6965D7141BE205370095807C /* AppDelegate.swift in Sources */,
 				698748AB1BE35A38004FA109 /* TGHomeViewController.swift in Sources */,
-				69D51A371BE74294007E176E /* TGTrip_InfoViewControlelr.swift in Sources */,
 				69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */,
 				69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */,
 				69D51A351BE74274007E176E /* TGTrip_CollectionViewController.swift in Sources */,
+				5E8609BE1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
