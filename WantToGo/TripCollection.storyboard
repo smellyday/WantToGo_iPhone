@@ -25,23 +25,6 @@
             </objects>
             <point key="canvasLocation" x="-2313" y="402"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jWP-dM-HIa">
-            <objects>
-                <navigationController storyboardIdentifier="TGTripCollection_ListNavigation" id="CHO-qd-qq5" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gP7-8F-i7g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="agD-uq-oHd" kind="relationship" relationship="rootViewController" id="vcE-01-gbL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nEb-GY-EUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1234.5" y="811.5"/>
-        </scene>
         <!--收集-->
         <scene sceneID="4xZ-Wc-evr">
             <objects>
@@ -62,6 +45,7 @@
                             <barButtonItem title="Map" id="nk6-uk-3OT"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgE-uO-YZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,19 +54,16 @@
         <!--Navigation Controller-->
         <scene sceneID="0Q1-IQ-E1M">
             <objects>
-                <navigationController storyboardIdentifier="TGTripCollection_MapNavigation" id="aZy-yA-dpP" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TGTripCollectionNavigation" id="aZy-yA-dpP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tVT-xi-l8z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="xmd-Y4-HA8" kind="relationship" relationship="rootViewController" id="v5T-Gu-UkM"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvn-Uf-IWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234.5" y="-49.5"/>
+            <point key="canvasLocation" x="-1333.5" y="32.25"/>
         </scene>
         <!--收集-->
         <scene sceneID="6BC-Gf-URK">
@@ -94,16 +75,25 @@
                         <color key="backgroundColor" red="0.27450980390000002" green="0.82352941180000006" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="收集" id="vvj-TY-mYQ">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="Be0-O8-hPA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="Be0-O8-hPA">
+                            <connections>
+                                <action selector="onClickHomeBtn" destination="xmd-Y4-HA8" id="NvV-yD-fQf"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="80x-KO-Igi"/>
-                            <barButtonItem title="List" id="8Dl-dL-lQ2"/>
+                            <barButtonItem title="List" id="8Dl-dL-lQ2">
+                                <connections>
+                                    <action selector="onClickListBtn" destination="xmd-Y4-HA8" id="Td0-Wj-Iav"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRd-wO-FFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241.5" y="-49.5"/>
+            <point key="canvasLocation" x="-265.5" y="32.25"/>
         </scene>
     </scenes>
 </document>

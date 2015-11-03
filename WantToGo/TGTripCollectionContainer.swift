@@ -8,11 +8,17 @@
 
 import UIKit
 
-class TGTripCollectionContainer: UIViewController {
+protocol TripCollectionContainerDelegate {
+    func showMapController()
+    func showListController()
+}
+
+class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelegate {
     
     // init 
-    let mapvc: UINavigationController = UIStoryboard(name: "TripCollection", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_MapNavigation") as! UINavigationController
-    let listvc: UINavigationController = UIStoryboard(name: "TripCollection", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_ListNavigation") as! UINavigationController
+    var navController: UINavigationController!
+    var mapvc: TGTripCollection_MapController = UIStoryboard(name: "TripCollection", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_MapController") as! TGTripCollection_MapController
+    var listvc: TGTripCollection_ListController = UIStoryboard(name: "TripCollection", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_ListController") as! TGTripCollection_ListController
     
     override func awakeFromNib() {
         self.tabBarItem.title = "收集"
@@ -22,7 +28,9 @@ class TGTripCollectionContainer: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.displayContentViewController(mapViewController: mapvc, listViewController: listvc)
+        self.navController = UINavigationController(rootViewController: mapvc)
+        mapvc.delegate = self
+        self.displayContentViewController(viewController: mapvc)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,23 +38,31 @@ class TGTripCollectionContainer: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func displayContentViewController(mapViewController mapViewController: UIViewController, listViewController: UIViewController) {
-        self.addChildViewController(mapvc)
-        self.addChildViewController(listvc)
+    func displayContentViewController(viewController viewController: UIViewController) {
+        self.addChildViewController(navController)
         
-        mapvc.view.frame = self.view.bounds
-        self.view.addSubview(mapvc.view)
+        navController.view.frame = self.view.bounds
+        self.view.addSubview(navController.view)
         
-        listvc.view.frame = CGRectMake(-self.view.frame.size.width, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)
-        self.view.addSubview(listvc.view)
-        
-        mapvc.didMoveToParentViewController(self)
-        listvc.didMoveToParentViewController(self)
+        navController.didMoveToParentViewController(self)
         
     }
     
+    /*====== TripCollectionContainerDelegate ======*/
+    func showMapController() {
+        
+    }
     
+    func showListController() {
+        listvc.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        mapvc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        mapvc.definesPresentationContext = true
+        mapvc.presentViewController(listvc, animated: true, completion: nil)
+    }
     
+    func backToHomePage() {
+        
+    }
     
 
     /*
