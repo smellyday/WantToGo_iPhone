@@ -155,10 +155,10 @@
 		69D51A2A1BE70554007E176E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */,
 				698748AA1BE35A38004FA109 /* TGHomeViewController.swift */,
 				69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */,
 				69D51A301BE7407A007E176E /* TGTripViewController.swift */,
+				5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */,
 				69D51A341BE74274007E176E /* TGTrip_CollectionViewController.swift */,
 			);
 			name = ViewController;
