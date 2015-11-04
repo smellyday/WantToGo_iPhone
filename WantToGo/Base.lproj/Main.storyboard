@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.82352941180000006" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Nkd-ZV-CHV">
@@ -96,7 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="望途狗" id="wb8-TB-tzA">
                         <barButtonItem key="leftBarButtonItem" title="设置" id="NcF-7i-v6r">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onClickSettingButton:" destination="oQ2-OE-DbR" id="dep-QF-Xeo"/>
                                 <segue destination="EbB-fo-EKp" kind="show" id="sWL-Gs-XwZ"/>
@@ -104,10 +103,10 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="tja-Ve-C0Z">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </barButtonItem>
                             <barButtonItem systemItem="refresh" id="Spf-EU-dWj">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onClickSyncButton:" destination="oQ2-OE-DbR" id="aIW-Wg-QRp"/>
                                 </connections>
@@ -470,8 +469,79 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Gc-DH-dwb">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD3-ab-GSh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RD3-ab-GSh" secondAttribute="height" multiplier="400:354" priority="750" id="8Eq-Oc-2if"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Eq-Oc-2if"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Eq-Oc-2if"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-Yw-WnX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RD3-ab-GSh" secondAttribute="trailing" id="2FP-Zd-rFF"/>
+                            <constraint firstItem="RD3-ab-GSh" firstAttribute="top" secondItem="OZ7-dK-tCP" secondAttribute="bottom" id="4x9-PS-gia"/>
+                            <constraint firstItem="wE2-U9-1cD" firstAttribute="top" secondItem="n4L-Yw-WnX" secondAttribute="bottom" id="BZr-Dy-G8s"/>
+                            <constraint firstItem="wE2-U9-1cD" firstAttribute="top" secondItem="RD3-ab-GSh" secondAttribute="bottom" priority="750" constant="382" id="Zwt-HZ-42Z">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="RD3-ab-GSh" firstAttribute="leading" secondItem="1Gc-DH-dwb" secondAttribute="leading" id="gEg-oN-qvV"/>
+                            <constraint firstItem="n4L-Yw-WnX" firstAttribute="leading" secondItem="1Gc-DH-dwb" secondAttribute="leading" id="o8H-PH-U4I"/>
+                            <constraint firstAttribute="trailing" secondItem="n4L-Yw-WnX" secondAttribute="trailing" id="tSW-c8-JzZ"/>
+                            <constraint firstItem="n4L-Yw-WnX" firstAttribute="top" secondItem="RD3-ab-GSh" secondAttribute="bottom" constant="8" id="xTJ-HT-D5u">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RD3-ab-GSh"/>
+                                <exclude reference="n4L-Yw-WnX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2FP-Zd-rFF"/>
+                                <exclude reference="4x9-PS-gia"/>
+                                <exclude reference="gEg-oN-qvV"/>
+                                <exclude reference="o8H-PH-U4I"/>
+                                <exclude reference="tSW-c8-JzZ"/>
+                                <exclude reference="xTJ-HT-D5u"/>
+                                <exclude reference="BZr-Dy-G8s"/>
+                                <exclude reference="Zwt-HZ-42Z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RD3-ab-GSh"/>
+                                <include reference="n4L-Yw-WnX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2FP-Zd-rFF"/>
+                                <include reference="4x9-PS-gia"/>
+                                <include reference="gEg-oN-qvV"/>
+                                <include reference="o8H-PH-U4I"/>
+                                <include reference="tSW-c8-JzZ"/>
+                                <include reference="xTJ-HT-D5u"/>
+                                <include reference="BZr-Dy-G8s"/>
+                                <include reference="Zwt-HZ-42Z"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="收集" id="fhu-ob-Qql">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="A0X-uN-BIQ">
@@ -489,6 +559,12 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ListContainerView" destination="n4L-Yw-WnX" id="dlG-c8-ghL"/>
+                        <outlet property="mapContainerView" destination="RD3-ab-GSh" id="ZfW-YQ-VNJ"/>
+                        <outlet property="mapviewBottomConstraint" destination="Zwt-HZ-42Z" id="ADA-3V-VeF"/>
+                        <outlet property="mapviewRatioConstraint" destination="8Eq-Oc-2if" id="5fl-9X-GFP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kda-qh-Ntg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -544,6 +620,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="设置" id="xmO-e5-jRo">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="gYr-q5-Div">
+                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onClickBackButton" destination="EbB-fo-EKp" id="SMK-t0-ehF"/>
                             </connections>
@@ -556,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDX-bs-2W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372.5" y="322.5"/>
+            <point key="canvasLocation" x="1339.5" y="322.5"/>
         </scene>
     </scenes>
     <resources>

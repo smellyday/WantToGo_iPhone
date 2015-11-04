@@ -10,7 +10,7 @@ import UIKit
 
 class TGTripCollection_ListController: UIViewController {
     
-    var delegate: TripCollectionContainerDelegate?
+    weak var delegate: TripCollectionContainerDelegate?
 
     @IBAction func onClickHomeBtn() {
         Home_NavigationController.popViewControllerAnimated(true)

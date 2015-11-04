@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TripCollectionContainerDelegate {
+protocol TripCollectionContainerDelegate : class {
     func showMapController()
     func showListController()
 }
