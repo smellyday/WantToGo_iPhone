@@ -57,11 +57,10 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
         mapNavViewController.view.frame = self.view.bounds
         
         self.transitionFromViewController(listNavViewController, toViewController: mapNavViewController,
-            duration: 1,
-            options: UIViewAnimationOptions.TransitionFlipFromLeft,
+            duration: 0.25,
+            options: UIViewAnimationOptions.TransitionCrossDissolve,
             animations: nil,
             completion: {(finished: Bool) in
-                self.listNavViewController.view.removeFromSuperview()
                 self.mapNavViewController.didMoveToParentViewController(self)
         })
         
@@ -75,11 +74,10 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
         listNavViewController.view.frame = self.view.bounds
         
         self.transitionFromViewController(mapNavViewController, toViewController: listNavViewController,
-            duration: 1,
-            options: UIViewAnimationOptions.TransitionFlipFromLeft,
+            duration: 0.25,
+            options: UIViewAnimationOptions.TransitionCrossDissolve,
             animations: nil,
             completion: {(finished: Bool) in
-                self.mapNavViewController.view.removeFromSuperview()
                 self.listNavViewController.didMoveToParentViewController(self)
         })
         
