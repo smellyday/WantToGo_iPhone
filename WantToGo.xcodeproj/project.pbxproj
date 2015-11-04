@@ -124,7 +124,7 @@
 				69D51A291BE7053E007E176E /* Network */,
 				69D51A281BE704C7007E176E /* Data */,
 				69D51A2A1BE70554007E176E /* ViewController */,
-				69D51A2B1BE70588007E176E /* UIKit */,
+				69D51A2B1BE70588007E176E /* View */,
 				6965D71A1BE205370095807C /* Assets.xcassets */,
 				6965D7171BE205370095807C /* Main.storyboard */,
 				6965D71C1BE205370095807C /* LaunchScreen.storyboard */,
@@ -178,11 +178,11 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		69D51A2B1BE70588007E176E /* UIKit */ = {
+		69D51A2B1BE70588007E176E /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = UIKit;
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

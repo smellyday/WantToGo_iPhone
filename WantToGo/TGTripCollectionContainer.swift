@@ -15,18 +15,28 @@ protocol TripCollectionContainerDelegate {
 
 class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelegate {
     
-    var mapNavViewController: UINavigationController!
-    var mapvc: TGTripCollection_MapController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_MapController") as! TGTripCollection_MapController
-    var listNavViewController: UINavigationController!
-    var listvc: TGTripCollection_ListController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_ListController") as! TGTripCollection_ListController
+    let mapNavViewController: UINavigationController
+    let mapvc: TGTripCollection_MapController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_MapController") as! TGTripCollection_MapController
+    let listNavViewController: UINavigationController
+    let listvc: TGTripCollection_ListController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_ListController") as! TGTripCollection_ListController
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        self.mapNavViewController = UINavigationController(rootViewController: mapvc)
+        self.listNavViewController = UINavigationController(rootViewController: listvc)
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.mapNavViewController = UINavigationController(rootViewController: mapvc)
+        self.listNavViewController = UINavigationController(rootViewController: listvc)
+        super.init(coder: aDecoder)
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        self.mapNavViewController = UINavigationController(rootViewController: mapvc)
-        self.listNavViewController = UINavigationController(rootViewController: listvc)
         
         mapvc.delegate = self
         listvc.delegate = self
