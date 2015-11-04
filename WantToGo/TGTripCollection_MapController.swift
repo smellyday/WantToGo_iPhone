@@ -39,7 +39,7 @@ class TGTripCollection_MapController: UIViewController {
         state = !state
         
         
-        self.view.layoutIfNeeded()
+//        self.view.layoutIfNeeded()
         UIView.animateWithDuration(0.25, animations: {
             
             if self.state {

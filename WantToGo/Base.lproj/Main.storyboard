@@ -339,6 +339,7 @@
                         <viewControllerLayoutGuide type="bottom" id="O9x-I5-LOJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4at-eU-Zgs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,6 +359,7 @@
                         <viewControllerLayoutGuide type="bottom" id="DtC-cL-OmT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lhO-sF-8Un">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-K0-e07">
@@ -419,10 +421,10 @@
                                 <exclude reference="mUz-p3-o4f"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="rm4-eQ-8Hf"/>
                                 <exclude reference="omP-3x-jn1"/>
                                 <exclude reference="xyn-Ku-kFO"/>
                                 <exclude reference="yDQ-Cg-5Rc"/>
-                                <exclude reference="rm4-eQ-8Hf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -431,10 +433,10 @@
                                 <include reference="mUz-p3-o4f"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="rm4-eQ-8Hf"/>
                                 <include reference="omP-3x-jn1"/>
                                 <include reference="xyn-Ku-kFO"/>
                                 <include reference="yDQ-Cg-5Rc"/>
-                                <include reference="rm4-eQ-8Hf"/>
                             </mask>
                         </variation>
                     </view>
@@ -468,6 +470,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wE2-U9-1cD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Gc-DH-dwb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD3-ab-GSh">
@@ -516,14 +519,14 @@
                                 <exclude reference="n4L-Yw-WnX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="BZr-Dy-G8s"/>
+                                <exclude reference="Zwt-HZ-42Z"/>
                                 <exclude reference="2FP-Zd-rFF"/>
                                 <exclude reference="4x9-PS-gia"/>
                                 <exclude reference="gEg-oN-qvV"/>
                                 <exclude reference="o8H-PH-U4I"/>
                                 <exclude reference="tSW-c8-JzZ"/>
                                 <exclude reference="xTJ-HT-D5u"/>
-                                <exclude reference="BZr-Dy-G8s"/>
-                                <exclude reference="Zwt-HZ-42Z"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -532,14 +535,14 @@
                                 <include reference="n4L-Yw-WnX"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="BZr-Dy-G8s"/>
+                                <include reference="Zwt-HZ-42Z"/>
                                 <include reference="2FP-Zd-rFF"/>
                                 <include reference="4x9-PS-gia"/>
                                 <include reference="gEg-oN-qvV"/>
                                 <include reference="o8H-PH-U4I"/>
                                 <include reference="tSW-c8-JzZ"/>
                                 <include reference="xTJ-HT-D5u"/>
-                                <include reference="BZr-Dy-G8s"/>
-                                <include reference="Zwt-HZ-42Z"/>
                             </mask>
                         </variation>
                     </view>
