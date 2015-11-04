@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E8609BE1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */; };
-		6937FC7E1BE8A53200EF6B0F /* TripCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6937FC7D1BE8A53200EF6B0F /* TripCollection.storyboard */; };
 		6937FC811BE8A80400EF6B0F /* TGTripCollectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FC801BE8A80400EF6B0F /* TGTripCollectionContainer.swift */; };
 		6937FC851BE8B16F00EF6B0F /* TGTripCollection_ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FC841BE8B16F00EF6B0F /* TGTripCollection_ListController.swift */; };
 		6937FC871BE8B18D00EF6B0F /* TGTripCollection_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937FC861BE8B18D00EF6B0F /* TGTripCollection_MapController.swift */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTrip_InfoViewControlelr.swift; sourceTree = "<group>"; };
-		6937FC7D1BE8A53200EF6B0F /* TripCollection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripCollection.storyboard; sourceTree = "<group>"; };
 		6937FC801BE8A80400EF6B0F /* TGTripCollectionContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripCollectionContainer.swift; sourceTree = "<group>"; };
 		6937FC841BE8B16F00EF6B0F /* TGTripCollection_ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripCollection_ListController.swift; sourceTree = "<group>"; };
 		6937FC861BE8B18D00EF6B0F /* TGTripCollection_MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripCollection_MapController.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				69D51A2B1BE70588007E176E /* UIKit */,
 				6965D71A1BE205370095807C /* Assets.xcassets */,
 				6965D7171BE205370095807C /* Main.storyboard */,
-				6937FC7D1BE8A53200EF6B0F /* TripCollection.storyboard */,
 				6965D71C1BE205370095807C /* LaunchScreen.storyboard */,
 				6965D71F1BE205370095807C /* Info.plist */,
 				698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */,
@@ -296,7 +293,6 @@
 				6965D71E1BE205370095807C /* LaunchScreen.storyboard in Resources */,
 				6965D71B1BE205370095807C /* Assets.xcassets in Resources */,
 				6965D7191BE205370095807C /* Main.storyboard in Resources */,
-				6937FC7E1BE8A53200EF6B0F /* TripCollection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

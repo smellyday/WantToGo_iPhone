@@ -9,11 +9,26 @@
 import UIKit
 
 class TGTripCollection_ListController: UIViewController {
+    
+    var delegate: TripCollectionContainerDelegate?
 
+    @IBAction func onClickHomeBtn() {
+        Home_NavigationController.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func onClickMapBtn() {
+        delegate?.showMapController()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        // Fix a problem: The height of navigationbar changes after animation.
+        self.navigationController?.navigationBar.layer.removeAllAnimations()
     }
 
     override func didReceiveMemoryWarning() {
