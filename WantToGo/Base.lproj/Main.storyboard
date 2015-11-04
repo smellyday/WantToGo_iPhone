@@ -103,7 +103,7 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="+" id="tja-Ve-C0Z">
+                            <barButtonItem systemItem="add" id="tja-Ve-C0Z">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </barButtonItem>
                             <barButtonItem systemItem="refresh" id="Spf-EU-dWj">
