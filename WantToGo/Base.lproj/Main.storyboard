@@ -15,9 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.27450980390000002" green="0.82352941180000006" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Nkd-ZV-CHV">
                         <rect key="frame" x="0.0" y="556" width="600" height="44"/>
@@ -95,18 +92,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="望途狗" id="wb8-TB-tzA">
                         <barButtonItem key="leftBarButtonItem" title="设置" id="NcF-7i-v6r">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onClickSettingButton:" destination="oQ2-OE-DbR" id="dep-QF-Xeo"/>
                                 <segue destination="EbB-fo-EKp" kind="show" id="sWL-Gs-XwZ"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="tja-Ve-C0Z">
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="tja-Ve-C0Z"/>
                             <barButtonItem systemItem="refresh" id="Spf-EU-dWj">
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onClickSyncButton:" destination="oQ2-OE-DbR" id="aIW-Wg-QRp"/>
                                 </connections>
@@ -141,7 +134,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RF5-DZ-UCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372.5" y="1141.5"/>
+            <point key="canvasLocation" x="1339" y="1487"/>
         </scene>
         <!--总览-->
         <scene sceneID="CDa-Qt-PCk">
@@ -172,7 +165,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-Pn-vTP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-Pn-vTP">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -267,6 +260,7 @@
                             </view>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NOT-Jl-VPn" firstAttribute="leading" secondItem="m6V-DO-jf6" secondAttribute="leading" id="2bM-PN-E9b"/>
                             <constraint firstItem="kjU-5T-TOt" firstAttribute="top" secondItem="LNr-Pn-vTP" secondAttribute="bottom" id="3fJ-K8-0cE"/>
@@ -348,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="quE-ls-pg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2832" y="1476.75"/>
+            <point key="canvasLocation" x="2832" y="1890"/>
         </scene>
         <!--收集-->
         <scene sceneID="ACp-VG-fHN">
@@ -459,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6h-8d-MtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3567" y="1920.75"/>
+            <point key="canvasLocation" x="3573" y="2542"/>
         </scene>
         <!--收集-->
         <scene sceneID="yY0-tk-eeM">
@@ -475,19 +469,60 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD3-ab-GSh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-4i-MWB">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Zv4-dB-KgA"/>
+                                            <constraint firstAttribute="height" constant="30" id="ecE-JP-DGt">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="Layout"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Zv4-dB-KgA"/>
+                                                <exclude reference="ecE-JP-DGt"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Zv4-dB-KgA"/>
+                                                <include reference="ecE-JP-DGt"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="RD3-ab-GSh" secondAttribute="height" multiplier="400:354" priority="750" id="8Eq-Oc-2if"/>
+                                    <constraint firstAttribute="width" secondItem="RD3-ab-GSh" secondAttribute="height" multiplier="400:354" priority="749" id="8Eq-Oc-2if"/>
+                                    <constraint firstAttribute="trailing" secondItem="O7b-4i-MWB" secondAttribute="trailing" constant="29" id="Sxb-1m-byR">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="O7b-4i-MWB" secondAttribute="bottom" constant="20" id="b1g-z9-CCD"/>
                                 </constraints>
                                 <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="O7b-4i-MWB"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <exclude reference="8Eq-Oc-2if"/>
+                                        <exclude reference="Sxb-1m-byR"/>
+                                        <exclude reference="b1g-z9-CCD"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="O7b-4i-MWB"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <include reference="8Eq-Oc-2if"/>
+                                        <include reference="Sxb-1m-byR"/>
+                                        <include reference="b1g-z9-CCD"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -510,7 +545,7 @@
                             <constraint firstItem="n4L-Yw-WnX" firstAttribute="leading" secondItem="1Gc-DH-dwb" secondAttribute="leading" id="o8H-PH-U4I"/>
                             <constraint firstAttribute="trailing" secondItem="n4L-Yw-WnX" secondAttribute="trailing" id="tSW-c8-JzZ"/>
                             <constraint firstItem="n4L-Yw-WnX" firstAttribute="top" secondItem="RD3-ab-GSh" secondAttribute="bottom" constant="8" id="xTJ-HT-D5u">
-                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                         </constraints>
                         <variation key="default">
@@ -563,15 +598,16 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="ListContainerView" destination="n4L-Yw-WnX" id="dlG-c8-ghL"/>
-                        <outlet property="mapContainerView" destination="RD3-ab-GSh" id="ZfW-YQ-VNJ"/>
+                        <outlet property="ListContainer" destination="n4L-Yw-WnX" id="V0W-Sp-zhU"/>
+                        <outlet property="layoutButton" destination="O7b-4i-MWB" id="ypc-m7-aUf"/>
+                        <outlet property="mapContainer" destination="RD3-ab-GSh" id="DH1-wD-bVF"/>
                         <outlet property="mapviewBottomConstraint" destination="Zwt-HZ-42Z" id="ADA-3V-VeF"/>
                         <outlet property="mapviewRatioConstraint" destination="8Eq-Oc-2if" id="5fl-9X-GFP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kda-qh-Ntg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573" y="1260.75"/>
+            <point key="canvasLocation" x="3573" y="1460"/>
         </scene>
         <!--设置-->
         <scene sceneID="0YS-9O-Hh7">
@@ -623,7 +659,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="设置" id="xmO-e5-jRo">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="gYr-q5-Div">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onClickBackButton" destination="EbB-fo-EKp" id="SMK-t0-ehF"/>
                             </connections>

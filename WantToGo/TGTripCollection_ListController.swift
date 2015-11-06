@@ -20,6 +20,9 @@ class TGTripCollection_ListController: UIViewController {
         delegate?.showMapController()
     }
     
+    
+    
+    /*=================== override ===================*/
     override func viewDidLoad() {
         super.viewDidLoad()
 

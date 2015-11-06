@@ -20,12 +20,16 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
     let listNavViewController: UINavigationController
     let listvc: TGTripCollection_ListController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TGTripCollection_ListController") as! TGTripCollection_ListController
     
+    
+    
+    /*=================== override ===================*/
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         self.mapNavViewController = UINavigationController(rootViewController: mapvc)
         self.listNavViewController = UINavigationController(rootViewController: listvc)
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         self.mapNavViewController = UINavigationController(rootViewController: mapvc)
@@ -42,12 +46,17 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
         listvc.delegate = self
         self.displayContentViewController(viewController: mapNavViewController)
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
+    /*=================== Method ===================*/
     func displayContentViewController(viewController viewController: UIViewController) {
         self.addChildViewController(viewController)
         
@@ -57,6 +66,9 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
         viewController.didMoveToParentViewController(self)
         
     }
+    
+    
+    
     
     /*====== TripCollectionContainerDelegate ======*/
     func showMapController() {
@@ -93,15 +105,5 @@ class TGTripCollectionContainer: UIViewController, TripCollectionContainerDelega
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
