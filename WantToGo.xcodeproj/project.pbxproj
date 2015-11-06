@@ -21,7 +21,7 @@
 		69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */; };
 		69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A301BE7407A007E176E /* TGTripViewController.swift */; };
 		69EF2DDE1BEC6100009A2988 /* UITableView+EmptyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EF2DDD1BEC6100009A2988 /* UITableView+EmptyExtension.swift */; };
-		69EF2DE21BEC6CD5009A2988 /* tripJson.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69EF2DE11BEC6CD5009A2988 /* tripJson.plist */; };
+		F4E58A1F7B980CD86EAE5CE5 /* Pods_WantToGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44211D842578FC0AC5A2EC7E /* Pods_WantToGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C74FFA42A945A5866AAF05 /* Pods-WantToGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WantToGo/Pods-WantToGo.release.xcconfig"; sourceTree = "<group>"; };
+		44211D842578FC0AC5A2EC7E /* Pods_WantToGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WantToGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8609BD1BE7BB3700A08782 /* TGTrip_InfoViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTrip_InfoViewControlelr.swift; sourceTree = "<group>"; };
 		6937FC801BE8A80400EF6B0F /* TGTripCollectionContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripCollectionContainer.swift; sourceTree = "<group>"; };
 		6937FC841BE8B16F00EF6B0F /* TGTripCollection_ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripCollection_ListController.swift; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGSettingViewController.swift; sourceTree = "<group>"; };
 		69D51A301BE7407A007E176E /* TGTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripViewController.swift; sourceTree = "<group>"; };
 		69EF2DDD1BEC6100009A2988 /* UITableView+EmptyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyExtension.swift"; sourceTree = "<group>"; };
-		69EF2DE11BEC6CD5009A2988 /* tripJson.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = tripJson.plist; sourceTree = "<group>"; };
+		6DAD39D3A1C184A4B66EEC26 /* Pods-WantToGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WantToGo/Pods-WantToGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E58A1F7B980CD86EAE5CE5 /* Pods_WantToGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC78F3E402EECEE76B064D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DAD39D3A1C184A4B66EEC26 /* Pods-WantToGo.debug.xcconfig */,
+				03C74FFA42A945A5866AAF05 /* Pods-WantToGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6937FC7F1BE8A54600EF6B0F /* TripCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,8 @@
 				6965D7271BE205370095807C /* WantToGoTests */,
 				6965D7321BE205370095807C /* WantToGoUITests */,
 				6965D7111BE205370095807C /* Products */,
+				2DC78F3E402EECEE76B064D7 /* Pods */,
+				E0A282DCDB9B854E1C361F8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				6965D7131BE205370095807C /* AppDelegate.swift */,
-				69D51A291BE7053E007E176E /* Network */,
 				69D51A281BE704C7007E176E /* Data */,
 				69D51A2A1BE70554007E176E /* ViewController */,
 				69D51A2B1BE70588007E176E /* View */,
@@ -133,7 +146,6 @@
 				6965D71A1BE205370095807C /* Assets.xcassets */,
 				6965D7171BE205370095807C /* Main.storyboard */,
 				6965D71C1BE205370095807C /* LaunchScreen.storyboard */,
-				69EF2DE11BEC6CD5009A2988 /* tripJson.plist */,
 				6965D71F1BE205370095807C /* Info.plist */,
 				698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */,
 			);
@@ -165,13 +177,6 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		69D51A291BE7053E007E176E /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
 		69D51A2A1BE70554007E176E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +204,14 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		E0A282DCDB9B854E1C361F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44211D842578FC0AC5A2EC7E /* Pods_WantToGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6965D7381BE205370095807C /* Build configuration list for PBXNativeTarget "WantToGo" */;
 			buildPhases = (
+				CFD039772AE14BF7BAD237E5 /* Check Pods Manifest.lock */,
 				6965D70C1BE205370095807C /* Sources */,
 				6965D70D1BE205370095807C /* Frameworks */,
 				6965D70E1BE205370095807C /* Resources */,
+				ACF05AAA69B6BE16E9684F16 /* Embed Pods Frameworks */,
+				14C4BD3A1B12E5FE26205A6E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6965D71E1BE205370095807C /* LaunchScreen.storyboard in Resources */,
-				69EF2DE21BEC6CD5009A2988 /* tripJson.plist in Resources */,
 				6965D71B1BE205370095807C /* Assets.xcassets in Resources */,
 				6965D7191BE205370095807C /* Main.storyboard in Resources */,
 			);
@@ -326,6 +341,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14C4BD3A1B12E5FE26205A6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WantToGo/Pods-WantToGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF05AAA69B6BE16E9684F16 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WantToGo/Pods-WantToGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD039772AE14BF7BAD237E5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6965D70C1BE205370095807C /* Sources */ = {
@@ -482,6 +545,7 @@
 		};
 		6965D7391BE205370095807C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAD39D3A1C184A4B66EEC26 /* Pods-WantToGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -499,6 +563,7 @@
 		};
 		6965D73A1BE205370095807C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C74FFA42A945A5866AAF05 /* Pods-WantToGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
