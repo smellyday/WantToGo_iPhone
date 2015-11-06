@@ -21,6 +21,7 @@
 		69D51A2D1BE7071D007E176E /* TGSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */; };
 		69D51A311BE7407A007E176E /* TGTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D51A301BE7407A007E176E /* TGTripViewController.swift */; };
 		69EF2DDE1BEC6100009A2988 /* UITableView+EmptyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EF2DDD1BEC6100009A2988 /* UITableView+EmptyExtension.swift */; };
+		69EF2DE21BEC6CD5009A2988 /* tripJson.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69EF2DE11BEC6CD5009A2988 /* tripJson.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		69D51A2C1BE7071D007E176E /* TGSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGSettingViewController.swift; sourceTree = "<group>"; };
 		69D51A301BE7407A007E176E /* TGTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGTripViewController.swift; sourceTree = "<group>"; };
 		69EF2DDD1BEC6100009A2988 /* UITableView+EmptyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyExtension.swift"; sourceTree = "<group>"; };
+		69EF2DE11BEC6CD5009A2988 /* tripJson.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = tripJson.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				6965D71A1BE205370095807C /* Assets.xcassets */,
 				6965D7171BE205370095807C /* Main.storyboard */,
 				6965D71C1BE205370095807C /* LaunchScreen.storyboard */,
+				69EF2DE11BEC6CD5009A2988 /* tripJson.plist */,
 				6965D71F1BE205370095807C /* Info.plist */,
 				698748631BE3450D004FA109 /* WantToGo-Bridging-Header.h */,
 			);
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6965D71E1BE205370095807C /* LaunchScreen.storyboard in Resources */,
+				69EF2DE21BEC6CD5009A2988 /* tripJson.plist in Resources */,
 				6965D71B1BE205370095807C /* Assets.xcassets in Resources */,
 				6965D7191BE205370095807C /* Main.storyboard in Resources */,
 			);
