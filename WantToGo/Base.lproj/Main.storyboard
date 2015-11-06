@@ -55,6 +55,7 @@
                             </tableView>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OWo-6f-W86" firstAttribute="leading" secondItem="xIi-ij-TMP" secondAttribute="leading" id="3sC-mk-VCU"/>
                             <constraint firstItem="cIN-Ac-FWK" firstAttribute="top" secondItem="OWo-6f-W86" secondAttribute="bottom" id="Fl7-wW-cun"/>
@@ -628,6 +629,7 @@
                             </tableView>
                         </subviews>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eeH-vV-39q" firstAttribute="top" secondItem="yUR-5o-4oi" secondAttribute="bottom" id="5u9-LB-CvB"/>
                             <constraint firstItem="eeH-vV-39q" firstAttribute="leading" secondItem="cRG-IE-c7k" secondAttribute="leading" id="I9V-WB-r9o"/>

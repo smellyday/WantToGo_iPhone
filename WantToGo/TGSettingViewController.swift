@@ -22,7 +22,6 @@ class TGSettingViewController: UIViewController, UITableViewDataSource, UITableV
         mTableView!.dataSource = self
         mTableView!.delegate = self
         self.automaticallyAdjustsScrollViewInsets = false
-        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         
     }
     

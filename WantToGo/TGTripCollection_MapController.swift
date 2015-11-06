@@ -124,11 +124,19 @@ class TGTripCollection_MapController: UIViewController, UITableViewDelegate, UIT
     
     /*====== UITableView DataSourceDelegate ======*/
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        let dataCount = 10
+        tableView.tableViewDisplay(Massage: "暂无收集的数据", ifNessaryForRowCount: UInt(dataCount))
+        
+        if dataCount == 0 {
+            return 0
+        }
+        
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
