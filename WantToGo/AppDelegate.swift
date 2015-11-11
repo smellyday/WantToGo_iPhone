@@ -10,61 +10,18 @@ import UIKit
 
 
 let Home_NavigationController: UINavigationController! = UIApplication.sharedApplication().keyWindow?.rootViewController as! UINavigationController
+var sharedTripAngine: TGTripAngine?
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var tripdb: FMDatabase!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        /* open trip database */
-        let sysDocuments = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
-        let tripDatabaseFileUrl = sysDocuments.URLByAppendingPathComponent("TripDatabase")
-
-        tripdb = FMDatabase(path: tripDatabaseFileUrl.path)
-        if !tripdb.open() {
-            print("Trip Database open error!")
-            return true
-        }
-        
-        var success: Bool
-        success = tripdb.executeUpdate("create table TripsTable(trip_id varchar(100), trip_name varchar(255))", withArgumentsInArray: nil)
-        if !success {
-            print("create table error")
-        }
-        
-        success = tripdb.executeUpdate("insert into TripsTable values(\"1234567\", \"trip001\")", withArgumentsInArray: [""])
-        if !success {
-            print("insert error")
-        }
-        success = tripdb.executeUpdate("insert into TripsTable values(?, ?)", ["768553", "trip002"])
-        if !success {
-            print("insert error")
-        }
-        
-        let ret = tripdb.executeQuery("select * from TripsTable", withArgumentsInArray: nil)
-        while ret.next() {
-            let tid = ret.stringForColumn("trip_id")
-            let tname = ret.stringForColumn("trip_name")
-            print("Trip id : \(tid), name : \(tname)")
-        }
-        
-        tripdb.close()
-        
-        
-//        tripDBQueue = FMDatabaseQueue(path: tripDatabaseFileUrl.path)
-//        assert(tripDBQueue != nil, "Trip Database Init Error")
-        
-//        tripDBQueue!.inDatabase(){
-//            (database: FMDatabase!) in
-//
-//        }
-
-        
-        
+        sharedTripAngine = TGTripAngine()
         
         return true
     }
@@ -91,6 +48,73 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    private func prepareDatabase() {
+        let filePath = NSBundle.mainBundle().pathForResource("tripJson", ofType: nil)!
+        let testData = NSData(contentsOfFile: filePath)
+        
+        do {
+            let jsonDic = try NSJSONSerialization.JSONObjectWithData(testData!, options: NSJSONReadingOptions.AllowFragments) as! [String : AnyObject?]
+            let tripsArr = [jsonDic, jsonDic, jsonDic]
+            
+            
+            
+            
+            // open db.
+            let tripsDB = YTKKeyValueStore(DBWithName: "TripsDatabase")
+            
+            
+            // create table.
+            tripsDB.createTableWithName("trips_table")
+            tripsDB.createTableWithName("system_pois_table")
+            tripsDB.createTableWithName("custom_pois_table")
+            
+            
+            // update db.
+            for tripDic in tripsArr {
+                
+//                let poisDic = tripDic[JSON_KEY_SYSTEM_POIS]
+//                let customPoisDic = tripDic[JSON_KEY_CUSTOM_POIS]
+                
+                if let tripDataDic = tripDic[JSON_KEY_TRIP_DATA] as? [String : AnyObject?] {
+                    
+                    let tripID = tripDataDic[JSON_KEY_TRIP_ID] as! String
+                    
+                    let tripInfoDic: [String : AnyObject?] = [
+                        JSON_KEY_TRIP_NAME : tripDataDic[JSON_KEY_TRIP_NAME] as! String?,
+                        JSON_KEY_TRIP_CREATE_TIME : tripDataDic[JSON_KEY_TRIP_CREATE_TIME] as! String?,
+                        JSON_KEY_TRIP_EDIT_TIME : tripDataDic[JSON_KEY_TRIP_EDIT_TIME] as! String?,
+                        JSON_KEY_TRIP_DEPARTURE_DATE : tripDataDic[JSON_KEY_TRIP_DEPARTURE_DATE] as! String?,
+                        JSON_KEY_TRIP_RETURN_DATE : tripDataDic[JSON_KEY_TRIP_RETURN_DATE] as! String?,
+                        JSON_KEY_TRIP_DAYS_COUNT : tripDataDic[JSON_KEY_TRIP_DAYS_COUNT] as! UInt?,
+                        JSON_KEY_TRIP_OWNER : tripDataDic[JSON_KEY_TRIP_OWNER] as! String?,
+                        JSON_KEY_TRIP_COLLECTIONS : tripDataDic[JSON_KEY_TRIP_COLLECTIONS] as! Array<AnyObject>?
+                    ]
+                    
+                    tripsDB.putObject(tripInfoDic, withId: tripID, intoTable: "trips_table")
+                    
+                }
+                
+            }
+            
+            
+            // close db.
+            tripsDB.close()
+            
+            
+        } catch let error as NSError {
+            print(error)
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
 

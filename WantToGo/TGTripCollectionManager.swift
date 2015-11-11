@@ -10,6 +10,6 @@ import Foundation
 
 class TGTripCollectionManager: NSObject {
     
-    var collectionList: [TGTripNode]?
+    var collectionList: [TGCollectionItem]?
 
 }
