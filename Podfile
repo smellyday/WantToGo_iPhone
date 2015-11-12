@@ -6,6 +6,7 @@ use_frameworks!
 target 'WantToGo' do
 
 pod 'FMDB'
+pod 'SwiftyJSON'
 pod 'AFNetworking', '3.0.0-beta.1'
 
 end

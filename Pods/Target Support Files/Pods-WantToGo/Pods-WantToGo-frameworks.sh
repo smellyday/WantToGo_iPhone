@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-WantToGo/AFNetworking.framework"
   install_framework "Pods-WantToGo/FMDB.framework"
+  install_framework "Pods-WantToGo/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-WantToGo/AFNetworking.framework"
   install_framework "Pods-WantToGo/FMDB.framework"
+  install_framework "Pods-WantToGo/SwiftyJSON.framework"
 fi
